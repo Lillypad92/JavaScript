@@ -31,3 +31,11 @@ const lNames = 'Smith, Schultz, Perez, Johnsson'.split(', ');
 1. write to the console 20 random full names from above list. Take the steps, exract the list of names, trim it, pick a name randomly, create a full name
 
 */
+
+const fNames = 'John,Mary,Hans,Thomas,José,Susanne'.split(',');
+const lNames = 'Smith,Schultz,Perez,Johnsson'.split(',');
+ for (let i = 0; i < 20; i++) {
+    console.log(`${fNames[rnd(0, fNames.length)]} ${lNames[rnd(0, lNames.length)]}`);
+ }
+
+

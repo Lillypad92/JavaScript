@@ -76,14 +76,12 @@ const formatter = new Intl.DateTimeFormat('de-DE', {
 
 console.log(`Custom German: ${formatter.format(date)}`);
 
-
-
-
 /* Exercises
 
 1. Write a code that checks your birthdate for validity
 2. If your birthday is valid write it to the console in Swedish locale, sve-SE
   //https://metacpan.org/pod/DateTime::Locale::Catalog
 3. Test with an invalid date such as June 31
-
 */
+
+

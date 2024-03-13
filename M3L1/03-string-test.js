@@ -116,3 +116,21 @@ myFunc(0);
 
 5. write code to test i myVar is a valid number;
 */
+
+//1
+let myVar = 5;;
+console.log(myVar);
+console.log(typeof myVar);
+
+//2
+if (typeof myVar === 'string' && myVar.length > 0)
+  console.log("myVar is a valid number");
+
+//3
+if (myVar)
+  console.log("myVar is a non-empty string");
+
+
+//5
+if (typeof myVar === 'number' && !Number.isNaN(myVar))
+  console.log('myVar is a valid number');

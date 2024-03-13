@@ -43,3 +43,23 @@ console.log(`The regex ${regexReplace} changes "${originalString}" to "${newStri
  'Lorem3 ipsum 45 dolor sit amet, 5consectetur adipisicing_99 elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
  Ut enim ad minim ven3iam, quis nostrud exercitation ull_88_amco laboris nisi ut aliquip ex ea com36modo 183 consequat.'
 */
+
+//1
+const firstEx = '<firstName/> ipsum dolor sit amet, consectetur adipisicing elit, sed do <firstName/> tempor incididunt ut labore et dolore magna aliqua.' + 
+'Ut enim ad minim <firstName/>, quis nostrud exercitation ullamco <firstName/> nisi ut aliquip ex ea commodo consequat.'
+const replace = /<firstName[/]>/g;
+
+const answer = firstEx.replaceAll(replace, 'Linda');
+console.log(answer);
+
+//2
+const secondEx = 'Lorem3 ipsum 45 dolor sit amet, 5consectetur adipisicing_99 elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' +
+'Ut enim ad minim ven3iam, quis nostrud exercitation ull_88_amco laboris nisi ut aliquip ex ea com36modo 183 consequat.'
+
+const numberMatch = secondEx.matchAll(/\d/g);
+let i = 0;
+for (const match of numberMatch) {
+  console.log(`at ${match.index} we found ${match[0]}`);
+  i++;
+}
+console.log(i);

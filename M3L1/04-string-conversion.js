@@ -24,6 +24,10 @@ let formatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'U
 let moneyString = formatter.format(someNumber);
 
 console.log(`${someNumber} with a U.S. currency formatted is ${moneyString}`);
+formatter = new Intl.NumberFormat('sv', {style: 'currency', currency: 'Sek'});
+moneyString = formatter.format(someNumber);
+
+console.log(`${someNumber} with a Sek currency formatted is ${moneyString}`);
 
 
 

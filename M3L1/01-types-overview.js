@@ -119,8 +119,6 @@ console.log(isEqual(name1, name2));
 function isEqual(obj1, obj2) {
   return (JSON.stringify(obj1) === JSON.stringify(obj2));
 }
-
-
 /* Exercises
 
 1. Declare a variable and the assign various values such as 5, 5+8, 5+8+'15', 5+8+'15'+{}, '', "", ``;
@@ -130,3 +128,50 @@ function isEqual(obj1, obj2) {
 4. create a couple of objects with properterties and test equality (value and referential)
 
 */
+/*1*/
+let myVar = 5;
+console.log(myVar);
+myVar = 5 + 8;
+console.log(myVar);
+myVar = 5 + 8 + '15';
+console.log(myVar);
+myVar = 5 + 8 + '15' + {};
+console.log(myVar);
+myVar = 'Hello';
+console.log(myVar);
+myVar = "Linda";
+console.log(myVar);
+myVar = `Hello again!`;
+console.log(myVar);
+
+/*2*/
+let s = "1" + "3".repeat(20);
+console.log(s);
+
+/*3*/
+s = "*".repeat(10) + "hello" + "*".repeat(10);
+console.log(s);
+
+/*4*/
+let myObjt1 = {petName: "Iris", owner: "Linda"};
+let myObjt2 = {petName: "Iris", owner: "Linda"};
+
+
+/*Uttrycket tilldelar värdet av myObjt2 till myObjt1*/
+// console.log(myObjt1 = myObjt2); 
+
+/*Equality operator checks wheter its two operands are equal, returning a Boolean result. Equal to*/
+console.log(myObjt1 == myObjt2); //False
+
+/*Strict equality operator checks whether its two operands are equal, returning a Boolean result. Equal value and equal type*/
+console.log(myObjt1 === myObjt2); //False
+
+console.log(myObjt1.petName === myObjt2.petName); //True
+
+console.log(myObjt1.secondOwner === myObjt2.secondOwner) ; //True
+
+console.log('done');
+
+
+
+
